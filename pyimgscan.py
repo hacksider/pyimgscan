@@ -164,7 +164,7 @@ corners = corners.reshape(4, 2) * scale
 img_corrected = perspective_transform(img_adj, corners)
 
 # write corrected image to file
-cv2.imwrite("./corrected.png", img_corrected)
+cv2.imwrite("./corrected.jpg", img_corrected)
 
 # convert the corrected image to grayscale to prepare for thresholding
 img_corrected = cv2.cvtColor(img_corrected, cv2.COLOR_BGR2GRAY)
