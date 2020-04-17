@@ -165,7 +165,7 @@ img_corrected = perspective_transform(img_adj, corners)
 
 # write corrected image to file
 gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-cv2.imwrite("./corrected.png", img_corrected)
+cv2.imwrite("./corrected.jpg", img_corrected)
 
 # convert the corrected image to grayscale to prepare for thresholding
 img_corrected = cv2.cvtColor(img_corrected, cv2.COLOR_BGR2GRAY)
